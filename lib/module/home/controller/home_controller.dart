@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:responsive_web/state_util.dart';
 import '../view/home_view.dart';

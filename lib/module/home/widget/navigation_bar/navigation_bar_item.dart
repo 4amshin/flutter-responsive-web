@@ -1,8 +1,13 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HmNavigationBarItem extends StatelessWidget {
-  const HmNavigationBarItem({Key? key}) : super(key: key);
+  final double? spaceBetween;
+  const HmNavigationBarItem({
+    Key? key,
+    this.spaceBetween,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +21,8 @@ class HmNavigationBarItem extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
         ),
-        const SizedBox(
-          width: 60.0,
+        SizedBox(
+          width: spaceBetween ?? 60.0,
         ),
         Text(
           "About",
